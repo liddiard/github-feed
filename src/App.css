@@ -1,0 +1,146 @@
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.emojione {
+  width: 1em;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 1em;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.feed {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feed > li {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #eee;
+  box-shadow: 0 5px 15px rgba(0,0,0, 0.15);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.feed > li .avatar {
+  float: left;
+  width: 50px;
+  margin: 0 0.75em 0.5em 0;
+  border: 1px solid #ddd;
+}
+
+.feed > li > h2 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.35em;
+  line-height: 1.35;
+}
+
+.feed > li > h2 .action {
+  color: #666;
+}
+
+.feed > li > time {
+  display: block;
+  color: #999;
+  margin: 0.5em 0;
+  font-size: 0.8em;
+}
+
+.feed > li > .description {
+  line-height: 1.35;
+  margin-bottom: 0.5em;
+}
+
+.feed > li > .homepage {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.feed > li .fa-external-link {
+  font-size: 0.75em;
+}
+
+.feed > li .stats {
+  margin: 0.5em 0;
+  color: #666;
+  cursor: default;
+}
+
+.feed > li .stats > span {
+  margin-right: 0.5em;
+}
+
+.feed > li .view-code {
+  display: none;
+  background-color: #4183C4;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.8em;
+  margin: 0 0.5em;
+  float: right;
+}
+
+.feed > li .view-code:hover {
+  text-decoration: none;
+  background-color: #1F61A2;
+}
+
+.feed > li > hr {
+  clear: both;
+  visibility: hidden;
+  margin: 0;
+}
+
+.feed > li .readme {
+  box-sizing: border-box;
+  padding: 0 1.5em;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  font-size: 0.85em;
+  position: relative;
+  transition: 0.25s all;
+  color: #333;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.feed > li .viewing.readme {
+  height: 360px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15) inset;
+  overflow: auto;
+}
+
+.feed > li .readme .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( 0deg, white, rgba(255,255,255, 0.5) 10%, transparent );
+  cursor: pointer;
+  transition: 0.25s all;
+}
+
+.feed > li .readme .mask:hover {
+  opacity: 0.25;
+}
+
+.feed > li .viewing.readme .mask {
+  display: none;
+}
